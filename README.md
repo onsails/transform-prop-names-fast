@@ -1,5 +1,7 @@
 # Transform the case of object property names
 
+[![NPM Version][npm-image]][npm-url]
+
 Transform objects so that all property names are `camelCased` or `snake_cased`.
 Accepts objects and arrays of objects, of any shape and depth.
 
@@ -38,3 +40,6 @@ Make all property names `snake_cased`.
 
 Contributions are indeed welcome. Feel free to open a PR, and make sure to run
 `npm run test` and `npm run lint` while doing so!
+
+[npm-image]: https://img.shields.io/npm/v/transform-prop-names.svg
+[npm-url]: https://npmjs.org/package/transform-prop-names
