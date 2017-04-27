@@ -4,7 +4,9 @@
   "version": "0.0.1",
   "scripts": {
     "compile": "rimraf lib/* && babel src -d lib",
-    "prepublish": "npm run compile"
+    "prepublish": "npm run compile",
+    "test": "jest",
+    "lint": "eslint src test"
   },
   "main": "lib/index.js",
   "homepage": "https://github.com/pioul/transform-prop-names#readme",
