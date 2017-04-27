@@ -1,7 +1,7 @@
 {
   "name": "transform-prop-names",
   "description": "Transform the case of object property names",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "compile": "rimraf lib/* && babel src -d lib",
     "prepublish": "npm run compile",
