@@ -31,5 +31,9 @@
     "eslint-plugin-react": "6.6.0",
     "jest": "^19.0.2",
     "rimraf": "2.5.4"
+  },
+  "dependencies": {
+    "camel-case": "^3.0.0",
+    "snake-case": "^2.1.0"
   }
 }
