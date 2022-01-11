@@ -1,5 +1,5 @@
 {
-  "name": "transform-prop-names",
+  "name": "transform-prop-names-fast",
   "description": "Transform the case of object property names",
   "version": "1.0.0",
   "scripts": {
