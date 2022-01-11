@@ -1,7 +1,7 @@
 {
   "name": "transform-prop-names-fast",
   "description": "Transform the case of object property names",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "compile": "rimraf lib/* && babel src -d lib",
     "prepublish": "npm run compile",
@@ -10,13 +10,13 @@
     "bench": "node bench/bench.js"
   },
   "main": "lib/index.js",
-  "homepage": "https://github.com/pioul/transform-prop-names#readme",
+  "homepage": "https://github.com/onsails/transform-prop-names#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pioul/transform-prop-names.git"
+    "url": "git+https://github.com/onsails/transform-prop-names.git"
   },
   "bugs": {
-    "url": "https://github.com/pioul/transform-prop-names/issues"
+    "url": "https://github.com/onsails/transform-prop-names/issues"
   },
   "author": "Philippe Masset <pioul06+github@gmail.com> (http://pioul.fr)",
   "license": "MIT",
