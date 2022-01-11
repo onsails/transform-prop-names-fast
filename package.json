@@ -6,7 +6,8 @@
     "compile": "rimraf lib/* && babel src -d lib",
     "prepublish": "npm run compile",
     "test": "jest",
-    "lint": "eslint src test"
+    "lint": "eslint src test",
+    "bench": "node bench/bench.js"
   },
   "main": "lib/index.js",
   "homepage": "https://github.com/pioul/transform-prop-names#readme",
@@ -26,6 +27,7 @@
     "babel-jest": "^19.0.0",
     "babel-preset-es2015": "6.18.0",
     "babel-preset-stage-0": "6.16.0",
+    "benchmark": "^2.1.4",
     "eslint": "3.9.1",
     "eslint-config-airbnb": "13.0.0",
     "eslint-plugin-import": "2.2.0",
@@ -35,7 +37,6 @@
     "rimraf": "2.5.4"
   },
   "dependencies": {
-    "camel-case": "^3.0.0",
-    "snake-case": "^2.1.0"
+    "change-case": "^4.1.2"
   }
 }

@@ -1,14 +1,12 @@
-const toCamelCase = require('camel-case');
-const toSnakeCase = require('snake-case');
-
-const getValType = (val) => {
-  let valType = val::Object.prototype.toString();
-  valType = valType.replace(/(?:\[object |])/g, '');
-  return valType;
-};
+const { snakeCase, camelCase } = require('change-case');
 
 const applyToPropertyNames = (transform, val) => {
-  const valType = getValType(val);
+  let valType;
+  if (val) {
+    valType = val.constructor.name;
+  } else {
+    valType = null;
+  }
 
   switch (valType) {
     case 'Array':
@@ -29,7 +27,7 @@ const applyToPropertyNames = (transform, val) => {
   }
 };
 
-const toCamelCasePropertyNames = (val) => applyToPropertyNames(toCamelCase, val);
-const toSnakeCasePropertyNames = (val) => applyToPropertyNames(toSnakeCase, val);
+const toCamelCasePropertyNames = (val) => applyToPropertyNames(camelCase, val);
+const toSnakeCasePropertyNames = (val) => applyToPropertyNames(snakeCase, val);
 
 module.exports = { toCamelCasePropertyNames, toSnakeCasePropertyNames };
